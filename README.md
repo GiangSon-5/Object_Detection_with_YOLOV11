@@ -1,5 +1,9 @@
 # Project Overview
 
+# I am using Kaggle's GPU for my project, and here is the link to my project (If you can't access it, it's because I set it to private): 
+[Kaggle Notebook: Q2: Object Detection](https://www.kaggle.com/code/nguyenquyetgiangson/q2-object-detection)
+
+
 # 1. Steps Taken in the Project
 
 This project focuses on object detection using YOLOv11 to identify five types of vehicles: Ambulance, Bus, Car, Motorcycle, and Truck. The following steps were performed:
