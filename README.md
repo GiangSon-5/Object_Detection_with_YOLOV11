@@ -1,4 +1,6 @@
-# Steps Taken in the Project
+# Project Overview
+
+# 1. Steps Taken in the Project
 
 This project focuses on object detection using YOLOv11 to identify five types of vehicles: Ambulance, Bus, Car, Motorcycle, and Truck. The following steps were performed:
 
@@ -19,3 +21,93 @@ This project focuses on object detection using YOLOv11 to identify five types of
 
 ## Model Export
 - The trained model was exported in ONNX format for further deployment or integration.
+
+# 2. Tools and Libraries Used
+
+## Programming Language
+- Python
+
+## Libraries
+- `os`, `shutil`: File and directory management.
+- `matplotlib`: Visualization of prediction results.
+- `ultralytics`: YOLO model training, validation, and prediction.
+
+## Environment
+- Kaggle Notebook, which provides GPU support and integrated dataset handling.
+
+# 3. Overall Performance Metrics
+- **mAP@50**: 0.653
+- **Precision**: 0.663
+- **Recall**: 0.608
+
+### Reasons for Performance
+- **Imbalanced Dataset**: The five labels were not equally represented, leading to better performance on dominant classes like Car and Ambulance while underrepresented classes (Truck, Motorcycle) performed poorly.
+- **High Precision**: Indicates fewer false positives, but the imbalance likely skewed predictions toward majority classes.
+- **Moderate Recall**: Suggests missed detections, likely due to insufficient samples for some classes.
+
+### Suggestions for Improvement
+- Balance the dataset with augmentation or sampling techniques.
+- Use class-weighted loss to mitigate class imbalance.
+
+# 4. Model Evaluation and Improvements
+### Strengths
+- Reliable detection for well-represented classes.
+- Reasonable precision across all classes.
+
+### Limitations
+- Poor performance for underrepresented classes.
+- Struggles with edge cases and occlusions.
+
+### Improvements
+- Augment the dataset to increase diversity and balance.
+- Optimize hyperparameters for better generalization.
+- Test on unseen datasets to evaluate robustness.
+
+# 5. Explanation of Project Files
+
+## Dataset
+Organized into a directory structure:
+- `/images/train`, `/images/valid`, `/images/test`
+- `/labels/train`, `/labels/valid`, `/labels/test`
+
+## Configuration File (vehicle_classes_config.yaml)
+- Specifies dataset paths, number of classes (`nc=5`), and class names.
+
+## Python Script
+- Handles data preparation, model training, validation, and predictions.
+- Includes code for exporting the model in ONNX format.
+
+## Visualization
+- Results were saved and visualized using Matplotlib.
+
+# 6. YOLOv11 Integration in the Project
+
+The integration of YOLOv11 followed these steps:
+
+## Model Initialization
+- The pre-trained YOLOv11 weights were loaded using the Ultralytics library.
+
+## Training
+- The model was trained on the provided dataset with fine-tuning to adapt to the specific classes.
+
+## Validation and Export
+- Post-training, the model was validated and exported to ONNX format for deployment.
+
+## Prediction
+- Predictions were run on the test set, and results were visualized with bounding boxes.
+
+This structured integration of YOLOv11 ensured efficient model training and deployment while maintaining flexibility for further improvements.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
