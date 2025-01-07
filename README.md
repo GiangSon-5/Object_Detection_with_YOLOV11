@@ -1,8 +1,14 @@
-# Project Overview
+![image](https://github.com/user-attachments/assets/1c1166a8-dcfc-4990-9aff-90b04a917ab5)# Project Overview
 
 # I am using Kaggle's GPU for my project, and here is the link to my project (If you can't access it, it's because I set it to private): 
 [Kaggle Notebook: Q2: Object Detection](https://www.kaggle.com/code/nguyenquyetgiangson/q2-object-detection)
 
+# DEMO:
+![Demo1](https://github.com/GiangSon-5/Object_Detection_with_YOLOV11/blob/main/images/demo1.jpg)
+
+![Demo2](https://github.com/GiangSon-5/Object_Detection_with_YOLOV11/blob/main/images/demo2.jpg)
+
+![Demo5](https://github.com/GiangSon-5/Object_Detection_with_YOLOV11/blob/main/images/demo5.jpg)
 
 # 1. Steps Taken in the Project
 
@@ -40,9 +46,9 @@ This project focuses on object detection using YOLOv11 to identify five types of
 - Kaggle Notebook, which provides GPU support and integrated dataset handling.
 
 # 3. Overall Performance Metrics
-- **mAP@50**: 0.653
-- **Precision**: 0.663
-- **Recall**: 0.608
+- **mAP@50**: 0.713
+- **Precision**: 0.693
+- **Recall**: 0.725
 
 ### Reasons for Performance
 - **Imbalanced Dataset**: The five labels were not equally represented, leading to better performance on dominant classes like Car and Ambulance while underrepresented classes (Truck, Motorcycle) performed poorly.
@@ -52,6 +58,8 @@ This project focuses on object detection using YOLOv11 to identify five types of
 ### Suggestions for Improvement
 - Balance the dataset with augmentation or sampling techniques.
 - Use class-weighted loss to mitigate class imbalance.
+
+![Val](https://github.com/GiangSon-5/Object_Detection_with_YOLOV11/blob/main/images/val.jpg)
 
 # 4. Model Evaluation and Improvements
 ### Strengths
