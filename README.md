@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/1c1166a8-dcfc-4990-9aff-90b04a917ab5)# Project Overview
+# Project Overview
 
 # I am using Kaggle's GPU for my project, and here is the link to my project (If you can't access it, it's because I set it to private): 
 [Kaggle Notebook: Q2: Object Detection](https://www.kaggle.com/code/nguyenquyetgiangson/q2-object-detection)
