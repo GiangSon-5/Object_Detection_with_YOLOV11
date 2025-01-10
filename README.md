@@ -1,6 +1,6 @@
 # Project Overview
 
-# I am using Kaggle's GPU for my project, and here is the link to my project (If you can't access it, it's because I set it to private): 
+# I am using Kaggle's GPU for my project, and here is the link to my project (If you can't access it, it's because I set it to private mode): 
 [Kaggle Notebook: Q2: Object Detection](https://www.kaggle.com/code/nguyenquyetgiangson/q2-object-detection)
 
 # DEMO:
